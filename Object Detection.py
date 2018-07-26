@@ -36,6 +36,7 @@ def detect(frame,net,transform):
 
 
 net = build_ssd('test')
+#Pretrained SSD neural network 
 net.load_state_dict(torch.load('ssd300_mAP_77.43_v2.pth',map_location = lambda storage ,loc: storage))
 
 
